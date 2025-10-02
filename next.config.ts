@@ -1,7 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  basePath: "/supervision",
+  redirects: async () => {
+    return [
+      {
+        source: "/",
+        destination: "/calls",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
