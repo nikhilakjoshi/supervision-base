@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Overpass, Geist_Mono } from "next/font/google";
-import "./globals.css";
 
 const overpassSans = Overpass({
   variable: "--font-overpass-sans",
